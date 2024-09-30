@@ -1,0 +1,7 @@
+package ar.edu.utn.frc.tup.lc.iv.exceptions;
+
+public class NotFoundException extends RuntimeException {
+    public NotFoundException(String message) {
+        super(message);
+    }
+}
