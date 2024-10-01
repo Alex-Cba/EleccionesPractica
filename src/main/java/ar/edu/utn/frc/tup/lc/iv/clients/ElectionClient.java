@@ -28,7 +28,7 @@ public class ElectionClient {
 
     public ElectionClient () {
         if (url == null || url.isEmpty()) {
-            url = "http://localhost:8080/ping";
+            url = "http://localhost:8080/";
         }
     }
 
