@@ -1,7 +1,6 @@
 package ar.edu.utn.frc.tup.lc.iv.dtos.chargeDTOs;
 
 import ar.edu.utn.frc.tup.lc.iv.dtos.districtDTOs.DistrictDTO;
-import ar.edu.utn.frc.tup.lc.iv.records.ChargesRecord;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
