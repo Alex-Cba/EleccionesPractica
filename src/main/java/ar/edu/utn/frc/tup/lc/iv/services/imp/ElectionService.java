@@ -106,6 +106,7 @@ public class ElectionService implements IElectionService {
         var section = checkSection.getBody().stream().findFirst().orElseThrow(() -> new NotFoundException("No se encontro seccion con el ID: " + districtId));
         var results = checkResult.getBody().stream()
                                 .filter(x -> x.sectionId().equals(sectionId))
+                                .sorted(Comparator.comparing(ResultRecord::voteCount).reversed())
                                 .collect(Collectors.groupingBy(ResultRecord::groupId));
 
         List<PoliticalResult> politicalResults = new ArrayList<>();
